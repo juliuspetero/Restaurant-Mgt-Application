@@ -1,0 +1,168 @@
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+
+/* Style the form - display items horizontally */ 
+.addRestaurant {
+  border-top: 100px;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Style the input fields */
+.addRestaurant input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.addRestaurant button {
+  padding: 10px 20px;
+  background-color: #282c34;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.addRestaurant button:hover {
+  background-color: royalblue;
+}
+
+.edit {
+  padding: 10px 20px;
+  background-color: #282c34;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.edit:hover {
+  background-color: #008000;
+}
+
+.delete {
+  padding: 10px 20px;
+  background-color: #282c34;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.delete:hover {
+  background-color: #FF6A74;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .addRestaurant input {
+    margin: 10px 0;
+  }
+
+  .addRestaurant {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
+
+.restaurant-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-table thead tr {
+  background-color: #282c34;
+  color: #ffffff;
+  text-align: left;
+}
+
+.restaurant-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-table thead tr {
+  background-color: #282c34;
+  color: #ffffff;
+  text-align: left;
+}
+
+.restaurant-table th,
+.restaurant-table td {
+  padding: 12px 15px;
+}
+
+.restaurant-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.restaurant-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.restaurant-table tbody tr:last-of-type {
+  border-bottom: 2px solid #282c34;
+}
+
+.restaurant-table tbody tr.active-row {
+  font-weight: bold;
+  color: #282c34;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
